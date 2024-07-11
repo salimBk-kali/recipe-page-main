@@ -1,0 +1,120 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+body{
+    background-color: hsl(30, 54%, 90%);
+}
+
+.image{
+    height: 260px;
+    background-image: url("../assets/images/image-omelette.jpeg");
+    background-size: 520px;
+    background-repeat: no-repeat;
+    background-position:  center 30px;
+    padding: 10px;
+}
+.page{
+    width: 600px;
+    height: 1300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: hsl(0, 0%, 100%);
+    
+    
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 40px;
+}
+.paragraphe{
+    font-size: 16px;
+    padding: 10px;
+    color: hsl(30, 10%, 34%);
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+.Preparation{
+    width: 500px;
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px;
+    color: hsl(30, 10%, 34%);
+    position: relative;
+    left: 40px;
+}
+.Preparation > span {
+    padding: 10px;
+    font-weight: 700;
+    color: hsl(332, 51%, 32%);
+}
+li span {
+    font-weight: 700;
+}
+  li{
+    padding-top: 10px;
+    list-style: none;
+    position: relative;
+}
+.Preparation li::before{
+    content: "•";
+    position: absolute;
+    left: -30px;
+    color: hsl(332, 51%, 32%);
+}
+ul li::marker {
+    color: hsl(332, 51%, 32%); 
+}
+.sup-title{
+    
+    color: hsl(14, 45%, 36%);
+    font-size: 30px;
+    font-weight: 700;
+}
+.Ingredients{
+    padding-left: 40px;
+    color: hsl(30, 10%, 34%);
+}
+.Ingredients li::before{
+    content: "•";
+    position: absolute;
+    left: -30px;
+    color: hsl(14, 45%, 36%);
+}
+.Instructions{
+    padding-left: 40px;
+    color: hsl(30, 10%, 34%);
+}
+ol li {
+    counter-increment: counter;
+}
+.Instructions li::before{
+    content:  counter(counter) ".";
+    position: absolute;
+    left: -30px;
+    color: hsl(14, 45%, 36%);
+}
+.Nutrition{
+    padding-left: 40px;
+    color: hsl(30, 10%, 34%);
+}
+caption{
+    padding: 10px;
+    
+}
+table{
+    display: table;
+    width: 560px;  
+    border-collapse: collapse;
+}
+table td {
+    border-bottom: 2px solid  hsl(30, 18%, 87%) ;
+
+}
+.colored{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
